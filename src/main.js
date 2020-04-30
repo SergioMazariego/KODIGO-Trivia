@@ -128,23 +128,23 @@ function triviaCine() {
             })
         }
         for(let i = 0; i < opcionesCinePreguntaTres.length; i++) {
-            opcionesCinePreguntaTres[i].addEventListener('click', function() { //Evaluar respuestas de la pregunta 3
+            opcionesCinePreguntaTres[i].addEventListener('click', function() { 
                 if(opcionesCinePreguntaTres[i] === opcionesCinePreguntaTres[2]) {
                     puntaje++
                 }
                 document.getElementById('cine_pregunta_tres').style.display = "none";
-                document.getElementById('cine_pregunta_cuatro').style.display = "block"; //Cambio de pregunta
+                document.getElementById('cine_pregunta_cuatro').style.display = "block";
             })
         }
         for(let i = 0; i < opcionesCinePreguntaCuatro.length; i++) {
-            opcionesCinePreguntaCuatro[i].addEventListener('click', function() { //Evaluar respuestas de la pregunta 4
+            opcionesCinePreguntaCuatro[i].addEventListener('click', function() { 
                 if(opcionesCinePreguntaCuatro[i] === opcionesCinePreguntaCuatro[1]) {
                     puntaje++
                 }
                 document.getElementById('cine_pregunta_cuatro').style.display = "none";
                 document.getElementById('mostrar_puntaje').style.display = 'block'; 
                 document.getElementById('puntaje').innerHTML = "Tu puntaje es de<br> " + puntaje + "/4";   
-                volverAJugar()                                                                    //Mostrar puntaje
+                volverAJugar()                                                                    
             })
         } 
     })
